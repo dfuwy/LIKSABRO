@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIKSA BRO</title>
+  <link rel="icon" type="image/png" href="liksabro_logo_black-removebg-preview.png">
+  <style>
+    body {
+      font-family: Gill Sans, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #ffffff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000000;
+      padding: 10px;
+      color: #000000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .easteregg a {
+  color: transparent;
+  text-decoration: none;
+}  
+
+    
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: red;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      flex: 3;
+    }
+
+    .card {
+      position: relative;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 250px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-text {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+
+    aside {
+      flex: 1;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    .aside-content {
+      margin-bottom: 40px;
+    }
+
+    .follow-us, .ai-chat-link {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .follow-us a, .ai-chat-link a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .vertical-line {
+      border-left: 2px solid #ddd;
+      height: 100%;
+      position: absolute;
+      left: -10px;
+    }
+
+    .follow-us {
+      margin-bottom: 50px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      border-top: 3px solid #ddd;
+    }
+
+    footer .brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    footer .brand span {
+      color: red;
+    }
+
+    footer .brand a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .draggable-circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: bold;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .draggable-circle:hover {
+      background-color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+        <div class="logo"><a href="liksabro.html" style="text-decoration: none; color: white;">LIKSA<span>BRO</span></a></div>
+        <nav> <!-- THIS WEBSITE BY LIKSABRO TEAM-->
+              <!-- THIS WEBSITE BY LIKSABRO TEAM-->
+            <ul>
+                <li><a href="BMI.html">BMI Calculater</a></li> - 
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div class="card">
+                <a href="diet.html">
+                    <img src="diet.webp" alt="Diet">
+                    <div class="card-text">START A DIET SYSTEM</div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="exercise.html">
+                    <img src="running.webp" alt="Exercise">
+                    <div class="card-text">START YOUR EXERCISES</div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="talktocoach.html">
+                    <img src="coach.jpg" alt="Coach">
+                    <div class="card-text">TALK TO YOUR COACH</div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="aichat.html">
+                    <img src="AI.avif" alt="AI Chat">
+                    <div class="card-text">AI CHAT</div>
+                </a>
+            </div>
+        </section>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <aside>
+            <div class="vertical-line"></div>
+
+            <div class="aside-content">
+                <div class="follow-us"><a href="https://linktr.ee/liksabro" target="_blank">FOLLOW US</a></div>
+                <div class="reopetaprob">
+                  
+                  
+
+                  <a href="mailto:adham.mohammed.eg.79@gmail.com?subject=Test%20Email&body=This%20is%20a%20test%20email" style="text-decoration: none; color: black; font-weight: bold;">REPORT A PROBLEM</a>
+                </div>
+                <div class="aside-content">
+                  <div class="easteregg"><p style="color:rgb(255, 255, 255)"><a href="EASTEREGG.html" target="_blank">CLICK HERE</a></p>
+                  <div class="reopetaprob">
+                
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div class="brand"><a href="liksabro.html">LIKSA<span>BRO</span></a></div>
+    </footer>
+
+    <div class="draggable-circle" id="l-ai-circle" style="cursor: pointer;">L-AI</div>
+
+    <script>
+      const circle = document.getElementById('l-ai-circle');
+      let isChatOpen = false;
+  
+      circle.addEventListener('click', () => {
+        if (!isChatOpen) {
+          openChat();
+        } else {
+          closeChat();
+        }
+      });
+  
+      function openChat() {
+        isChatOpen = true;
+        const chatScript = document.createElement('script');
+        chatScript.src = 'https://www.chatbase.co/embed.min.js';
+        chatScript.defer = true;
+        document.body.appendChild(chatScript);
+  
+        const chatConfig = document.createElement('script');
+        chatConfig.innerHTML = `
+          window.embeddedChatbotConfig = {
+            chatbotId: "Ld_xwrf219XDXGzujCg2h",
+            domain: "www.chatbase.co"
+          }
+        `;
+        document.body.appendChild(chatConfig);
+      }
+  
+      function closeChat() {
+        isChatOpen = false;
+        const chatFrame = document.querySelector('iframe[src*="chatbase.co"]');
+        if (chatFrame) {
+          chatFrame.remove();
+        }
+      }
+    </script>
+</body>
+</html>
